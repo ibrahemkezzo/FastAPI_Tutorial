@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ibrahem kezzo", email = "ibrahemkezzo.w@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.163.2",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "imagekitio>=5.13.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+fastapi-tutorial = "fastapi_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
